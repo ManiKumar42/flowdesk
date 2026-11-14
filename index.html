@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlowDesk brings tasks, docs and timelines into one calm workspace so your team ships faster." />
+    <title>FlowDesk — Project management that stays out of your way</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#" class="logo"><img class="logo__img" src="logo-mark.svg" alt="" width="32" height="32" />FlowDesk</a>
+            <nav class="nav__links" id="navlinks">
+                <a href="#features">Feature</a>
+                <a href="#how">How it works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav__cta">
+                <a href="#contact" class="btn btn--ghost">Request demo</a>
+                <a href="#" class="btn btn--primary" data-open-modal>Get started</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero__inner">
+                <span class="pill reveal">✨ New: AI weekly summaries are here</span>
+                <h1 class="reveal">Work that <em>flows</em>,<br />not work about work.</h1>
+                <p class="hero__sub reveal">FlowDesk brings tasks, docs and timelines into one calm workspace, so your team spends less time updating tools and more time shipping.</p>
+                <form class="hero__form reveal" id="heroForm" novalidate>
+                  <input type="email" id="heroEmail" placeholder="Enter your work email" aria-label="Work email" required />
+                  <button class="btn btn--primary btn--lg" type="submit">Get started — it's free</button>
+                </form>
+                <p class="hero__note reveal">No credit card · Free for teams up to 5 · Cancel anytime</p>
+                <!-- Interactive board mockup -->
+                <div class="board reveal" id="board" aria-label="Product preview">
+                    <div class="board__bar">
+                        <i></i><i></i><i></i>
+                        <span>Q4 Launch · Board</span>
+                        <small>Tip: click a card to move it →</small>
+                    </div>
+                    <div class="board__cols">
+                        <div class="col" data-col="0"><h4>To do <b>3</b></h4></div>
+                        <div class="col" data-col="1"><h4>In progress <b>2</b></h4></div>
+                        <div class="col" data-col="2"><h4>Done<b>2</b></h4></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LOGOS -->
+        <section class="logos">
+            <div class="container">
+                <p>Trusted by 12,000+ teams at fast-moving companies </p>
+                <div class="logos__row">
+                    <span>Northwind</span><span>Lumen</span><span>Orbitly</span><span>Katana</span><span>Brightly</span><span>Parcel</span>
+                </div>
+            </div>
+        </section>
+        <!-- STATS -->
+        <section class="stats">
+            <div class="container stats__grid">
+              <div><strong data-count="38" data-suffix="%">0</strong><span>faster project delivery</span></div>
+              <div><strong data-count="12" data-suffix="k+">0</strong><span>teams onboarded</span></div>
+              <div><strong data-count="5" data-suffix="hrs">0</strong><span>saved per person weekly</span></div>
+              <div><strong data-count="99" data-suffix=".9%">0</strong><span>uptime, last 12 months</span></div>
+            </div>
+        </section>
+        <!-- FEATURES -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="eyebrow">Features</span>
+                    <h2>Everything your team needs. <br />Nothing it doesn't.</h2>
+                </div>
+                <div class="features">
+                    <article class="card reveal">
+                        <div class="icon">▦</div>
+                        <h3>Flexible boards</h3>
+                        <p>Kanban, list, calendar or timeline — switch views in a click without losing context.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="icon">⚡</div>
+                        <h3>Automations</h3>
+                        <p>Assign, notify and move tasks automatically. Build rules in plain English, no code.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="icon">✎</div>
+                        <h3>Docs built in</h3>
+                        <p>Write specs and meeting notes right next to the tasks they belong to.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- HOW -->
+        <section class="section section--dark" id="how">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="eyebrow">How it works</span>
+                    <h2>Up and running in an afternoon</h2>
+                    <p class="about">FlowDesk is a project-management tool that combines tasks, docs and timelines in one place. Teams plan work on shared boards, automate routine updates, and get an AI-written weekly summary, so everyone knows what is happening without another meeting.</p>
+                </div>
+                <ol class="steps">
+                   <li class="reveal"><span>01</span><h3>Create a workspace</h3><p>Import from Trello, Asana or a spreadsheet in one click.</p></li>
+                   <li class="reveal"><span>02</span><h3>Invite your team</h3><p>Share a link. Everyone sees what matters to them, instantly.</p></li>
+                   <li class="reveal"><span>03</span><h3>Ship with clarity</h3><p>Track progress automatically and let FlowDesk handle the status updates.</p></li>
+                </ol>
+            </div>
+        </section>
+        <!-- PRICING -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="section__head reveal">
+                  <span class="eyebrow">Pricing</span>
+                  <h2>Simple pricing that scales with you</h2>
+                    <div class="toggle" id="billingToggle" role="group" aria-label="Billing period">
+                      <button class="is-active" data-period="monthly">Monthly</button>
+                      <button data-period="yearly">Yearly <em>−20%</em></button>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <article class="plan reveal">
+                        <h3>Starter</h3>
+                        <p class="plan__desc">For small teams getting organized.</p>
+                        <div class="price"><span class="amount" data-monthly="0" data-yearly="0">$0</span><small>/user/mo</small></div>
+                        <a href="#" class="btn btn--outline btn--block" data-open-modal>Start free</a>
+                        <ul>
+                          <li>Up to 5 members</li>
+                          <li>3 projects</li>
+                          <li>Board &amp; list views</li>
+                          <li>Community support</li>
+                        </ul>
+                    </article>
+                    <article class="plan plan--featured reveal">
+                        <span class="badge">Most popular</span>
+                        <h3>Pro</h3>
+                        <p class="plan__desc">For growing teams that need more power.</p>
+                        <div class="price"><span class="amount" data-monthly="12" data-yearly="10">$12</span><small>/user/mo</small></div>
+                        <a href="#" class="btn btn--primary btn--block" data-open-modal>Start 14-day trial</a>
+                        <ul>
+                            <li>Unlimited projects</li>
+                            <li>Timelines &amp; automations</li>
+                            <li>AI weekly summaries</li>
+                            <li>Priority support</li>
+                        </ul>
+                    </article>
+                    <article class="plan reveal">
+                        <h3>Enterprise</h3>
+                        <p class="plan__desc">Security and control at scale.</p>
+                        <div class="price"><span class="amount" data-monthly="29" data-yearly="24">$29</span><small>/user/mo</small></div>
+                        <a href="#contact" class="btn btn--outline btn--block">Contact sales</a>
+                        <ul>
+                         <li>SSO &amp; SCIM</li>
+                         <li>Audit logs</li>
+                         <li>Custom roles</li>
+                         <li>Dedicated success manager</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="section section--int">
+            <div class="container">
+                <div class="section__head reveal">
+                  <span class="eyebrow">Loved by teams</span>
+                  <h2>Don't take our word for it</h2>
+                </div>
+                <div class="quotes">
+                    <figure class="card reveal">
+                      <blockquote>“We cut our weekly status meeting from an hour to ten minutes. FlowDesk just knows what's going on.”</blockquote>
+                      <figcaption><span class="avatar" style="--h:260">PR</span><div><b>Priya Raman</b><small>VP Product, Lumen</small></div></figcaption>
+                    </figure>
+                    <figure class="card reveal">
+                      <blockquote>“Migrating from Jira took one afternoon. Our engineers actually enjoy using it, which is a first.”</blockquote>
+                      <figcaption><span class="avatar" style="--h:150">DK</span><div><b>Daniel Kim</b><small>CTO, Orbitly</small></div></figcaption>
+                    </figure>
+                    <figure class="card reveal">
+                      <blockquote>“The timeline view alone paid for the subscription. We caught three slipping deadlines in week one.”</blockquote>
+                      <figcaption><span class="avatar" style="--h:20">SO</span><div><b>Sara Okafor</b><small>Ops Lead, Parcel</small></div></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container container--narrow">
+                <div class="section__head reveal">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Questions, answered</h2>
+                </div>
+                <div class="faq">
+                    <div class="faq__item">
+                        <button class="faq__q" aria-expanded="false">Is there really a free plan?<i></i></button>
+                        <div class="faq__a"><p>Yes. Starter is free forever for teams up to 5 people with up to 3 projects. No credit card needed.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__q" aria-expanded="false">Can I import from other tools?<i></i></button>
+                        <div class="faq__a"><p>You can import from Trello, Asana, Jira, Notion and CSV files. Most teams are done in under 15 minutes.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__q" aria-expanded="false">How does billing work?<i></i></button>
+                        <div class="faq__a"><p>You're billed per active user. Add or remove seats any time and we'll prorate automatically. Yearly billing saves 20%.</p></div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__q" aria-expanded="false">Is my data secure?<i></i></button>
+                        <div class="faq__a"><p>Data is encrypted in transit and at rest. We're SOC 2 Type II compliant and offer SSO on the Enterprise plan.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT / DEMO REQUEST -->
+        <section class="section section--tint" id="contact">
+            <div class="container contact">
+                <div class="contact__info reveal">
+                    <span class="eyebrow">Contact</span>
+                    <h2>Book a free demo</h2>
+                    <p>See FlowDesk in action. Our team will give you a 20-minute tour tailored to your workflow.</p>
+                    <ul class="contact__list">
+                      <li><span aria-hidden="true">✉</span><div><b>Email</b><a href="mailto:athavamanikumar883@gmail.com">athavamanikumar883@gmail.com</a></div></li>
+                      <li><span aria-hidden="true">☎</span><div><b>Phone</b><a href="tel:+919182462123">+919182462123</a></div></li>
+                      <li><span aria-hidden="true">⌖</span><div><b>Office</b>LIG-136, MVP Colony, visakhapatnam, India</div></li>
+                      <li><span aria-hidden="true">◷</span><div><b>Hours</b>Mon–Fri, 9am–6pm IST</div></li>
+                    </ul>
+                </div>
+                <form class="contact__form card reveal" id="demoForm" novalidate>
+                  <h3>Request a demo</h3>
+                    <div class="row">
+                      <label>Full name<input type="text" name="name" placeholder="Ada Lovelace" /><span class="field-error"></span></label>
+                      <label>Work email<input type="email" name="email" placeholder="ada@company.com" /><span class="field-error"></span></label>
+                    </div>
+                    <div class="row">
+                        <label>Company<input type="text" name="company" placeholder="Acme Inc." /><span class="field-error"></span></label>
+                        <label>Team size
+                            <select name="size">
+                              <option value="">Select…</option>
+                              <option>1–5</option><option>6–20</option><option>21–100</option><option>100+</option>
+                            </select>
+                            <span class="field-error"></span>
+                        </label>
+                    </div>
+                    <label>Message <span class="opt">(optional)</span><textarea name="message" rows="3" placeholder="What would you like to see?"></textarea></label>
+                    <button class="btn btn--primary btn--block btn--lg" type="submit">Request demo</button>
+                    <p class="form-success" id="demoSuccess" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container reveal">
+                <h2>Ready to find your flow?</h2>
+                <p>Join 12,000+ teams already shipping faster with FlowDesk.</p>
+                <a href="#" class="btn btn--light btn--lg" data-open-modal>Get Started free</a>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div>
+                <a href="#" class="logo"><img class="logo__img" src="logo-mark.svg" alt="" width="32" height="32" />FlowDesk</a>
+                <p>Calm project management for modern teams.</p>
+            </div>
+            <div><h5>Product</h5><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#how">How it works</a></div>
+            <div><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="#contact">Contact</a><a href="mailto:hello@flowdesk.example">hello@flowdesk.example</a></div>
+            <div><h5>Legal</h5><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a></div>
+        </div>
+        <div class="container footer__bottom">© <span id="year"></span> FlowDesk, Inc. All rights reserved.</div>
+    </footer>
+    <!-- SIGNUP MODAL -->
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+            <div id="modalForm">
+                <h3 id="modalTitle">Create your free account</h3>
+                <p>Takes less than a minute.</p>
+                <form id="signupForm" novalidate>
+                   <label>Full name<input type="text" id="suName" placeholder="Ada Lovelace" required /></label>
+                   <label>Work email<input type="email" id="suEmail" placeholder="ada@company.com" required /></label>
+                   <label>Password<input type="password" id="suPass" placeholder="At least 8 characters" required /></label>
+                   <p class="error" id="suError" role="alert"></p>
+                   <button class="btn btn--primary btn--block btn--lg" type="submit">Create account</button>
+                </form>
+            </div>
+            <div id="modalSuccess" hidden>
+              <div class="check">✓</div>
+              <h3>You're in, <span id="suWho"></span>!</h3>
+              <p>We've sent a confirmation link to <b id="suMail"></b>.</p>
+              <button class="btn btn--outline btn--block" id="modalDone">Done</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
